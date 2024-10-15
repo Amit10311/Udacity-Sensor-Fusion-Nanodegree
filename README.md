@@ -11,5 +11,10 @@ In this project, I processed multiple point clouds data files from Lidar sensor,
 
 My final result is shown below, where the green points represent the street surface and the obstacles are marked in the red boxes.
 
+
+## Lecture Notes
+[Lecture 1-1 Lidar and Point Cloud](https://github.com/Amit10311/Udacity-Sensor-Fusion-Nanodegree/blob/main/lectures/lec1_1-lidar-and-point-clouds.md)
+
+
 ### Resources 
 1. https://github.com/fanweng/Udacity-Sensor-Fusion-Nanodegree/tree/main
