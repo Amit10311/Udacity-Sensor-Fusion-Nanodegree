@@ -1,0 +1,32 @@
+---
+name: Lesson 1 - Exercise 3
+
+run-name: Run of the complex workflow
+
+on:
+  # Workflow run trigger events
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  # Manually trigger workflow run
+  workflow_dispatch:
+
+jobs:
+  # First job
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    steps:
+    # action is used to clone the repository to the runner.
+      - uses: actions/checkout@v4
+
+      # By default, the runner will use Bash on Linux/MacOS runners
+      # Bash is supported on all runner types
+      - name: Run a one-line script
+        run: echo Hello, world!
+
+      - name: Run a multi-line script
+        run: |
+          echo Add other actions to build,
+          echo test, and deploy your project.
